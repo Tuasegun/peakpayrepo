@@ -1,9 +1,16 @@
 import React from 'react'
 import {MainLayout} from '../layout'
+import {Accessible, Hero, Perks, Flexible, Benefits, DownloadBanner, ContactForm} from '../features/home'
 const Home = () => {
   return (
     <MainLayout>
-        <div>Home</div>
+        <Hero/>
+        <Perks/>
+        <Accessible/>
+        <Flexible/>
+        <Benefits/>
+        <DownloadBanner/>
+        <ContactForm/>
     </MainLayout>
   )
 }

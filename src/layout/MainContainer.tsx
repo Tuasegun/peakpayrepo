@@ -9,7 +9,7 @@ export const MainContainer = ({bg,children}: MainContainerProps) => {
   return (
     <Box
     bg={bg|| "#FFFFFFFF" }
-  
+    position="relative"
     >
       <Container
         px={['5%']}

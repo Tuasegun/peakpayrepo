@@ -49,6 +49,14 @@ export const Header = () => {
             >
                 Blog
             </Text>
+            <Text
+             fontSize="1rem"
+             fontWeight="700"
+             color="brand.black"
+             _hover={{color: "brand.orange.200"}}
+            >
+                FAQ
+            </Text>
         </Flex>
        </Flex>
 
