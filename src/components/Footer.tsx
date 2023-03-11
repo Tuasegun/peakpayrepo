@@ -7,8 +7,11 @@ import {
   Flex,
   List,
   ListItem,
+  Center
 } from "@chakra-ui/react";
 import { MainContainer } from "../layout";
+import {SocialIcon} from '../constant'
+
 export const Footer = () => {
   return (
     <MainContainer bg="#00283D">
@@ -37,9 +40,29 @@ export const Footer = () => {
             </Box>
           </Flex>
           <Box>
-            <Heading color="#FFF" fontSize="1.3125rem">
+            <Heading color="#FFFF" fontSize="1.3125rem">
               Follow us on:
             </Heading>
+            <List display="flex" columnGap="1rem" mt="1rem">
+               {
+               SocialIcon.map((item, index) => (
+                <ListItem key={index} cursor="pointer">
+                <Center
+                bg="#FFF"
+                width="2rem"
+                height="2rem"
+                borderRadius="50%"
+                >
+                    <a href={item.link}>
+                    <Text color="brand.darkBlue" fontSize="1.25rem">
+                        {item.icon}
+                    </Text>
+                    </a>
+                </Center>
+            </ListItem>
+               ))
+                }
+            </List>
           </Box>
         </Flex>
         <Box my="3rem" color="#FFF" borderTop="1px solid #FFF" w="full" />
