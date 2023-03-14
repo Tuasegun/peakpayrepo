@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Heading, Container, Center, HStack, Image } from '@chakra-ui/react'
+import { Box, Heading, Container, Center, HStack, Image, Flex } from '@chakra-ui/react'
 import { MainContainer } from '../../layout'
 
 export const DownloadBanner = () => {
@@ -7,10 +7,11 @@ export const DownloadBanner = () => {
    <MainContainer bg="none">
         <Box
         bg="brand.orange.200"
-        py="7rem"
+        py={["1.5rem","7rem"]}
         my="2rem"
         borderRadius={"1rem"}
         position="relative"
+
         >
              <Box
             position="absolute"
@@ -30,22 +31,24 @@ export const DownloadBanner = () => {
             alignItems="center"
             justifyContent={"center"}
             >
-                <Heading textAlign="center" color="brand.white" fontSize="67.34px" maxW="70%" lineHeight="72px">
+                <Heading textAlign="center" color="brand.white" fontSize={["2.5rem","67.34px"]} maxW={["100%","70%"]} lineHeight={["3rem","72px"]}>
                 Instant credit for you. Download peakpay
                 </Heading>
 
-                <HStack
+                <Flex
                 width={"100%"}
-                height="53.55px"
+                height="auto"
             justifyContent="center"
             alignItems="center"
             cursor="pointer"
             mt="3.5625rem"
+            gap="1.5rem"
+            flexDir={["column", "row"]}
           >
-            <Box width="15%" height="auto">
+            <Box width={["70%","15%"]} height="auto">
               <Image height="100%"  objectFit="contain" src="assets/images/home/appStore.png" alt="appStore" />
             </Box>
-            <Box width="15%" height="auto">
+            <Box width={["70%","15%"]} height="auto">
               <Image
                 objectFit="contain"
                 borderRadius="0.5rem"
@@ -55,7 +58,7 @@ export const DownloadBanner = () => {
                 alt="playstore"
               />
             </Box>
-          </HStack>
+          </Flex>
             </Center>
         </Box>
     </MainContainer>

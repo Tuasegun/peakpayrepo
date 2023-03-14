@@ -15,10 +15,14 @@ import {SocialIcon} from '../constant'
 export const Footer = () => {
   return (
     <MainContainer bg="#00283D">
-      <Box py="6.625rem">
-        <Flex justifyContent={"space-between"}>
-          <Flex columnGap="5%" width="45%">
-            <Box w="100%">
+      <Box py={["4rem","6.625rem"]}>
+        <Flex rowGap={'2rem'} justifyContent={"space-between"}
+        flexDir={["column", "row"]}
+        >
+          <Flex columnGap="5%" width={["80%","45%"]}
+          flexDir={['column-reverse', 'row']}
+          >
+            <Box w="100%" display={['none', 'block']}>
               <Box w={"10.38rem"} h={"2.5rem"}>
                 <Image src="assets/icons/logoWhite.png" alt="" />
               </Box>
@@ -64,9 +68,37 @@ export const Footer = () => {
                 }
             </List>
           </Box>
+          <Flex rowGap="24px" flexDirection={'column'} display={['flex', 'none']} justifyContent="space-between">
+          <Text color="#FFFFFF">
+            🇺🇸 🇳🇬 24b Bodija Olusanya Street, Lekki Phase 1, Lagos, Nigeria.
+          </Text>
+
+          <List display="flex" columnGap="2rem">
+            <ListItem>
+              <Text color="#FFF">Privacy Policy</Text>
+            </ListItem>
+            <ListItem color="#FFF">
+              <Text>Terms of Use</Text>
+            </ListItem>
+          </List>
         </Flex>
+        </Flex>
+
         <Box my="3rem" color="#FFF" borderTop="1px solid #FFF" w="full" />
-        <Flex justifyContent="space-between">
+
+        <Box w="100%" display={['block', 'none']}>
+              <Box w={"10.38rem"} h={"2.5rem"}>
+                <Image src="assets/icons/logoWhite.png" alt="" />
+              </Box>
+              <Text color="#A7AEA8" fontSize="1rem" mt="0.5rem">
+                Peakpay ©2023. All Rights Reserved
+              </Text>
+            </Box>
+        
+      
+
+
+        <Flex display={['none', 'flex']} justifyContent="space-between">
           <Text color="#FFFFFF">
             🇺🇸 🇳🇬 24b Bodija Olusanya Street, Lekki Phase 1, Lagos, Nigeria.
           </Text>

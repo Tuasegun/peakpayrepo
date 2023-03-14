@@ -3,6 +3,7 @@ import {MainLayout} from '../layout'
 import {Accessible, Hero, Perks, Flexible, Benefits, DownloadBanner, ContactForm} from '../features/home'
 const Home = () => {
   return (
+    <>
     <MainLayout>
         <Hero/>
         <Perks/>
@@ -12,6 +13,7 @@ const Home = () => {
         <DownloadBanner/>
         <ContactForm/>
     </MainLayout>
+    </>
   )
 }
 

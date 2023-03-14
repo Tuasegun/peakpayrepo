@@ -6,9 +6,9 @@ export const PerksCard = ({perkImage, perkTitle, perkText}: perkContentInterface
     <Box>
         <Image src={perkImage} alt=""/>
         <Heading
-        fontSize="4.2088rem"
-        lineHeight="4.5rem"
-        mt="2rem"
+        fontSize={["2.5rem","4.2088rem"]}
+        lineHeight={["40px","4.5rem"]}
+        mt={["1.5rem","2rem"]}
         textAlign="center"
         >
         {perkTitle}
@@ -16,8 +16,9 @@ export const PerksCard = ({perkImage, perkTitle, perkText}: perkContentInterface
         <Text
         fontSize="1rem"
         lineHeight="1.5rem"
-        mt="1.5rem"
+        mt={["1rem","1.5rem"]}
         textAlign="center"
+        color="#535353"
         >
         {perkText}
         </Text>

@@ -20,6 +20,8 @@ export const Accessible = () => {
         px="3%"
         borderRadius="1rem"
         position="relative"
+        flexDirection={["column", "row"]}
+        py={['2rem', '0rem']}
         >
              <Box
             position="absolute"
@@ -36,11 +38,11 @@ export const Accessible = () => {
             </Box>
             
             <Box
-            width="40%"
+            width={["100%","40%"]}
             color="brand.white"
             zIndex={2}
             >
-                <Heading fontSize="3.1575rem" lineHeight="3.5rem">
+                <Heading fontSize={["2rem","3.1575rem"]} lineHeight={["2.5rem","3.5rem"]}>
                 Accessible and quick loans
                 </Heading>
                 <Text
@@ -59,7 +61,7 @@ export const Accessible = () => {
                 Download PeakPay
                 </Button>
             </Box>
-            <Box  zIndex={2}  width="50%">
+            <Box  zIndex={2}  width="50%" display={["none", "block"]}>
             <Box
             width="100%"
             height="100%"

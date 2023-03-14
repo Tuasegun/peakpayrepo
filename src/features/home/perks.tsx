@@ -10,7 +10,7 @@ export const Perks = () => {
     <Box
     py="6rem"
     >
-       <SimpleGrid columns={[1, 2, 3]} spacing="25px">
+       <SimpleGrid columns={[1, 2, 3]} spacing={["3.0625rem","25px"]}>
        {
             PerkContent.map((perk, index) => (
                 <PerksCard key={index} {...perk}/>

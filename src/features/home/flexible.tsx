@@ -18,9 +18,10 @@ export const Flexible = () => {
           px="3%"
           borderRadius="1rem"
           position="relative"
+          py={["2rem", "0rem"]}
         >
-          <Box width="40%" color="brand.black" zIndex={2}>
-            <Heading fontSize="3.1575rem" lineHeight="3.5rem" width="90%">
+          <Box width={["100%","40%"]} color="brand.black" zIndex={2}>
+            <Heading fontSize={["2rem","3.1575rem"]} lineHeight={["2.5rem","3.5rem"]} width="90%">
               Flexible repayment plans
             </Heading>
             <Text
@@ -41,7 +42,7 @@ export const Flexible = () => {
               Download PeakPay
             </Button>
           </Box>
-          <Box zIndex={2} width="50%">
+          <Box zIndex={2} width="50%" display={["none", "block"]}>
             <Box width="100%" height="100%">
               <Image src="assets/images/home/flexible.png" alt="" />
             </Box>
