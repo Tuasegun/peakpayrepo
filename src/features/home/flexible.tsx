@@ -5,7 +5,7 @@ import { CgArrowRight } from "react-icons/cg";
 
 export const Flexible = () => {
   return (
-    <Box py="5%" position="relative">
+    <Box py={["5%", "2.5%"]} position="relative">
       <MainContainer bg="none">
         <Box
           display="flex"
@@ -20,8 +20,12 @@ export const Flexible = () => {
           position="relative"
           py={["2rem", "0rem"]}
         >
-          <Box width={["100%","40%"]} color="brand.black" zIndex={2}>
-            <Heading fontSize={["2rem","3.1575rem"]} lineHeight={["2.5rem","3.5rem"]} width="90%">
+          <Box width={["100%", "40%"]} color="brand.black" zIndex={2}>
+            <Heading
+              fontSize={["2rem", "3.1575rem"]}
+              lineHeight={["2.5rem", "3.5rem"]}
+              width="90%"
+            >
               Flexible repayment plans
             </Heading>
             <Text

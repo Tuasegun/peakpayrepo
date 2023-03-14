@@ -5,7 +5,7 @@ import {CgArrowRight} from 'react-icons/cg'
 export const Accessible = () => {
   return (
     <Box
-    py="5%"
+    py={["5%","2.5%"]}
     position="relative"
     >
     <MainContainer bg="none">
