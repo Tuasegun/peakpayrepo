@@ -9,17 +9,21 @@ export const BenefitBox = ({benefitTitle, benefitText, benefitImage, textSpacing
     px="2rem"
     width="100%"
     borderRadius="1rem"
+    position="relative"
     >
         <Box
-        maxHeight="27.0194rem"
-        px={["1rem","3.75rem"]}
+        maxHeight={ ["auto","27.0194rem"]}
+        px={["0","3.75rem"]}
+        position="relative"
+        w="full"
         >
-            <Image h="100%" src={benefitImage} alt=""/>
+            <Image h="100%" w="full" src={benefitImage} alt="" objectFit="contain"/>
         </Box>
         <Heading
         mt={["1.5rem", `${textSpacing}`]}
         fontSize={["1.5rem","3.1575rem"]}
         color="brand.black"
+        position="relative"
         >
         {benefitTitle}
         </Heading>

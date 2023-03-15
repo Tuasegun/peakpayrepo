@@ -72,11 +72,10 @@ export const Header = () => {
                 isOpen ? <AiOutlineClose onClick={() => setIsOpen(false)} size="2rem" /> : <AiOutlineMenu size="2rem" onClick={() => setIsOpen(true)} />
             }
         </Box>
-        {
+       </Flex>
+       {
             isOpen && <MobileHeader />
         }
-       </Flex>
-
         
     </MainContainer>
     </Box>
