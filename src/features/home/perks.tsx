@@ -1,6 +1,6 @@
 import React from 'react'
 import {Box, SimpleGrid }from '@chakra-ui/react'
-import { PerksCard } from './perksCard'
+import { PerksCard } from './PerksCard'
 import {PerkContent} from   '../../constant'
 import { MainContainer } from '../../layout'
 
