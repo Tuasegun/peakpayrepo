@@ -3,7 +3,7 @@ import {Box,Flex, Heading, Text, Image, Center} from '@chakra-ui/react'
 export const FaqHero = () => {
   return (
     <Center
-     height="100vh"
+     height="80vh"
      p={["5%", "5%"]}
     >
      <Flex

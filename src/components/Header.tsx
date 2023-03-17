@@ -3,6 +3,7 @@ import {Box, Image, Text, Flex} from '@chakra-ui/react'
 import { MainContainer } from '../layout'
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 import { MobileHeader } from './MobileHeader'
+import { NavLink } from 'react-router-dom'
 export const Header = () => {
     const [isOpen, setIsOpen] = useState(false)
   return (
@@ -31,6 +32,7 @@ export const Header = () => {
         cursor="pointer"
         display={['none', 'flex']}
         >
+            <NavLink to="/">
             <Text
             fontSize="1rem"
             fontWeight="700"
@@ -39,6 +41,8 @@ export const Header = () => {
             >
                 Products
             </Text>
+            </NavLink>
+            <NavLink to="/about">
             <Text
              fontSize="1rem"
              fontWeight="700"
@@ -47,6 +51,8 @@ export const Header = () => {
             >
                 About
             </Text>
+            </NavLink>
+            <NavLink to="/blog">
             <Text
              fontSize="1rem"
              fontWeight="700"
@@ -55,6 +61,8 @@ export const Header = () => {
             >
                 Blog
             </Text>
+            </NavLink>
+            <NavLink to="/faq">
             <Text
              fontSize="1rem"
              fontWeight="700"
@@ -63,6 +71,7 @@ export const Header = () => {
             >
                 FAQ
             </Text>
+            </NavLink>
         </Flex>
 
         <Box
@@ -74,7 +83,7 @@ export const Header = () => {
         </Box>
        </Flex>
        {
-            isOpen && <MobileHeader />
+            isOpen && <MobileHeader closeHeader={() => setIsOpen(!isOpen)} />
         }
         
     </MainContainer>

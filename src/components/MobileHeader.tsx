@@ -1,6 +1,12 @@
 import React from 'react'
 import { Box, Text, VStack} from '@chakra-ui/react'
-export const MobileHeader = () => {
+import { NavLink } from 'react-router-dom'
+
+interface MobileHeaderProps {
+    closeHeader: () => void
+}
+
+export const MobileHeader = ({closeHeader}: MobileHeaderProps) => {
   return (
     <Box
     position="sticky"
@@ -17,18 +23,27 @@ export const MobileHeader = () => {
         <VStack
         gap="2rem"
         >
+            <NavLink to="/" onClick={closeHeader}>
             <Text fontSize="1.5rem" fontWeight="700">
                 Products
             </Text >
+            </NavLink>
+            <NavLink to="/about" onClick={closeHeader}>
             <Text fontSize="1.5rem" fontWeight="700">
                 About
             </Text>
+            </NavLink>
+
+            <NavLink to="/blog" onClick={closeHeader}>
             <Text fontSize="1.5rem" fontWeight="700">
                 Blog
             </Text>
+            </NavLink>
+            <NavLink to="/faq" onClick={closeHeader}>
             <Text fontSize="1.5rem" fontWeight="700">
                 FAQ
             </Text>
+            </NavLink>
         </VStack>
     </Box>
   )
