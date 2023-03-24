@@ -26,7 +26,7 @@ export const FaqHero = () => {
          lineHeight={["3.5rem","6rem"]}
         >
         Asked Questions
-        </Heading>
+        </Heading> 
         <Text>
         Having any issues you need resolved? We’ve got you covered
         </Text>
@@ -37,7 +37,7 @@ export const FaqHero = () => {
         px={["5%","0"]}
         >
           <Box width="100%">
-            <Image src="assets/images/faq/faqHero.png" alt="faqHero" />
+            <Image src="/assets/images/faq/faqHero.png" alt="faqHero" />
           </Box>
         </Box>
       </Flex>

@@ -66,7 +66,7 @@ export const Accessible = () => {
             width="100%"
             height="100%"
             >
-                <Image src="assets/images/home/accessibleImage.png" alt=""/>
+                <Image src="/assets/images/home/accessibleImage.png" alt=""/>
             </Box>
             </Box>
         </Box>

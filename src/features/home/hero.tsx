@@ -33,7 +33,7 @@ export const Hero = () => {
           </Text>
 
           <Box display={['block', 'none']} maxWidth={["100%","40%"]} mt={["4.0625rem", "0px"]}>
-          <Image src="assets/images/home/heroImage.png" alt="hero" />
+          <Image src="/assets/images/home/heroImage.png" alt="hero" />
         </Box>
 
           <Flex
@@ -46,7 +46,7 @@ export const Hero = () => {
             gap="1rem"
           >
             <Box width={["45%","25%"]} height="100%">
-              <Image src="assets/images/home/appStore.png" alt="appStore" />
+              <Image src="/assets/images/home/appStore.png" alt="appStore" />
             </Box>
             <Box width={["45%","25%"]}  height="100%">
               <Image
@@ -78,10 +78,10 @@ export const Hero = () => {
                     h="2.5rem"
                     borderRadius="0.5rem"
                   >
-                    <Image src="assets/icons/badge.svg" alt="heroIcon1" />
+                    <Image src="/assets/icons/badge.svg" alt="heroIcon1" />
                   </Center>
                   <Box w="37px" height="40px">
-                    <Image src="assets/icons/cbnLogo.png" alt="" />
+                    <Image src="/assets/icons/cbnLogo.png" alt="" />
                   </Box>
                   <Text fontSize="1rem" fontWeight="700">
                     Central Bank of Nigeria
@@ -107,10 +107,10 @@ export const Hero = () => {
                     h="2.5rem"
                     borderRadius="0.5rem"
                   >
-                    <Image src="assets/icons/shieldCheck.svg" alt="heroIcon2" />
+                    <Image src="/assets/icons/shieldCheck.svg" alt="heroIcon2" />
                   </Center>
                   <Box w="103.47px" height="40px">
-                    <Image src="assets/icons/ndicLogo.png" alt="" />
+                    <Image src="/assets/icons/ndicLogo.png" alt="" />
                   </Box>
                 </Box>
               </Box>
@@ -118,7 +118,7 @@ export const Hero = () => {
           </Flex>
         </Box>
         <Box display={['none', 'block']} maxWidth={["100%","40%"]} mt={["4.0625rem", "0px"]}>
-          <Image src="assets/images/home/heroImage.png" alt="hero" />
+          <Image src="/assets/images/home/heroImage.png" alt="hero" />
         </Box>
       </Flex>
     </Box>

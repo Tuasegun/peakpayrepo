@@ -48,7 +48,7 @@ export const Flexible = () => {
           </Box>
           <Box zIndex={2} width="50%" display={["none", "block"]}>
             <Box width="100%" height="100%">
-              <Image src="assets/images/home/flexible.png" alt="" />
+              <Image src="/assets/images/home/flexible.png" alt="" />
             </Box>
           </Box>
         </Box>

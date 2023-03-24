@@ -34,9 +34,9 @@ export const MobileHeader = ({closeHeader}: MobileHeaderProps) => {
             </Text>
             </NavLink>
 
-            <NavLink to="/blog" onClick={closeHeader}>
+            <NavLink to="/terms" onClick={closeHeader}>
             <Text fontSize="1.5rem" fontWeight="700">
-                Blog
+              Terms
             </Text>
             </NavLink>
             <NavLink to="/faq" onClick={closeHeader}>

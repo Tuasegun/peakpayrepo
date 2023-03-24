@@ -24,7 +24,7 @@ export const DownloadBanner = () => {
                 <Image 
                 width="100%"
                 height="100%"
-                src="assets/images/home/downloadBg.png" alt="bgImg" />
+                src="/assets/images/home/downloadBg.png" alt="bgImg" />
             </Box>
             <Center
             flexDirection={"column"}
@@ -46,7 +46,7 @@ export const DownloadBanner = () => {
             flexDir={["column", "row"]}
           >
             <Box width={["70%","15%"]} height="auto">
-              <Image height="100%"  objectFit="contain" src="assets/images/home/appStore.png" alt="appStore" />
+              <Image height="100%"  objectFit="contain" src="/assets/images/home/appStore.png" alt="appStore" />
             </Box>
             <Box width={["70%","15%"]} height="auto">
               <Image
@@ -54,7 +54,7 @@ export const DownloadBanner = () => {
                 borderRadius="0.5rem"
                 height="100%"
                 width="100%"
-                src="assets/images/home/googlePlayStore.png"
+                src="/assets/images/home/googlePlayStore.png"
                 alt="playstore"
               />
             </Box>

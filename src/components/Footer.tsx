@@ -7,7 +7,8 @@ import {
   Flex,
   List,
   ListItem,
-  Center
+  Center,
+  Link
 } from "@chakra-ui/react";
 import { MainContainer } from "../layout";
 import {SocialIcon} from '../constant'
@@ -24,7 +25,7 @@ export const Footer = () => {
           >
             <Box w="100%" display={['none', 'block']}>
               <Box w={"10.38rem"} h={"2.5rem"}>
-                <Image src="assets/icons/logoWhite.png" alt="" />
+                <Image src="/assets/icons/logoWhite.png" alt="" />
               </Box>
               <Text color="#A7AEA8" fontSize="1rem" mt="0.5rem">
                 Peakpay ©2023. All Rights Reserved
@@ -75,9 +76,9 @@ export const Footer = () => {
 
           <List display="flex" columnGap="2rem">
             <ListItem>
-              <Text color="#FFF">Privacy Policy</Text>
+              <Text as={Link} href={"/faq"} color="#FFF">FAQ</Text>
             </ListItem>
-            <ListItem color="#FFF">
+            <ListItem color="#FFF" as={Link} href="/terms">
               <Text>Terms of Use</Text>
             </ListItem>
           </List>
@@ -105,10 +106,10 @@ export const Footer = () => {
 
           <List display="flex" columnGap="2rem">
             <ListItem>
-              <Text color="#FFF">Privacy Policy</Text>
+              <Text  as={Link} href={"/faq"} color="#FFF">FAQ</Text>
             </ListItem>
             <ListItem color="#FFF">
-              <Text>Terms of Use</Text>
+              <Text  as={Link} href="/terms"  color="#FFF">Terms of Use</Text>
             </ListItem>
           </List>
         </Flex>

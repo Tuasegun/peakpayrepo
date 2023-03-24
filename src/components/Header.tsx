@@ -15,6 +15,7 @@ export const Header = () => {
        <Flex columnGap="10%" alignItems="center"
          justifyContent={["space-between", "flex-start"]}
        >
+         <NavLink to="/">   
        <Box
         width="132.86px"
         height="32px"
@@ -24,8 +25,9 @@ export const Header = () => {
             width="100%"
             height="100%"
             objectFit="contain"
-            src="assets/icons/logo.png" alt="logo" />
+            src="/assets/icons/logo.png" alt="logo" />
         </Box>
+        </NavLink>
 
         <Flex 
         columnGap="48px"
@@ -52,14 +54,14 @@ export const Header = () => {
                 About
             </Text>
             </NavLink>
-            <NavLink to="/blog">
+            <NavLink to="/terms">
             <Text
              fontSize="1rem"
              fontWeight="700"
              color="brand.black"
              _hover={{color: "brand.orange.200"}}
             >
-                Blog
+              Terms
             </Text>
             </NavLink>
             <NavLink to="/faq">
