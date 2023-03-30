@@ -8,9 +8,9 @@ import {
   List,
   ListItem,
   Center,
-  Link
 } from "@chakra-ui/react";
 import { MainContainer } from "../layout";
+import {Link } from 'react-router-dom'
 import {SocialIcon} from '../constant'
 
 export const Footer = () => {
@@ -76,10 +76,14 @@ export const Footer = () => {
 
           <List display="flex" columnGap="2rem">
             <ListItem>
-              <Text as={Link} href={"/faq"} color="#FFF">FAQ</Text>
+              <Link to="/faq">
+              <Text color="#FFF">FAQ</Text>
+              </Link>
             </ListItem>
-            <ListItem color="#FFF" as={Link} href="/terms">
+            <ListItem color="#FFF">
+              <Link to="/terms">
               <Text>Terms of Use</Text>
+              </Link>
             </ListItem>
           </List>
         </Flex>
@@ -106,10 +110,14 @@ export const Footer = () => {
 
           <List display="flex" columnGap="2rem">
             <ListItem>
-              <Text  as={Link} href={"/faq"} color="#FFF">FAQ</Text>
+            <Link to="/faq">
+              <Text color="#FFF">FAQ</Text>
+              </Link>
             </ListItem>
             <ListItem color="#FFF">
-              <Text  as={Link} href="/terms"  color="#FFF">Terms of Use</Text>
+            <Link to="/terms">
+              <Text    color="#FFF">Terms of Use</Text>
+              </Link>
             </ListItem>
           </List>
         </Flex>
