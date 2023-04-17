@@ -8,6 +8,7 @@ export const Perks = () => {
   return (
     <MainContainer bg="brand.gray">
     <Box
+    id="about"
     py="6rem"
     >
        <SimpleGrid columns={[1, 2, 3]} spacing={["3.0625rem","25px"]}>

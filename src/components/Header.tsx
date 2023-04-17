@@ -44,7 +44,7 @@ export const Header = () => {
                 Products
             </Text>
             </NavLink>
-            <NavLink to="/about">
+            <a href="#about">
             <Text
              fontSize="1rem"
              fontWeight="700"
@@ -53,7 +53,7 @@ export const Header = () => {
             >
                 About
             </Text>
-            </NavLink>
+            </a>
             <NavLink to="/terms">
             <Text
              fontSize="1rem"

@@ -31,16 +31,21 @@ export const Footer = () => {
                 Peakpay ©2023. All Rights Reserved
               </Text>
             </Box>
-            <Box>
+            <Box
+            display="flex"
+            flexDir="column"
+            width="100%"
+            >
               <Heading color="#FFF" fontSize="1.3125rem">
                 Need Help?
               </Heading>
 
-              <Text color="#A7AEA8" fontSize="21.33px">
-                Support@peakpay.com
+              <Text as='a' href="mail:Hello@peakpay.ng" color="#A7AEA8" fontSize="21.33px">
+              Hello@peakpay.ng 
               </Text>
-              <Text color="#A7AEA8" fontSize="21.33px">
-                +234 809 546 2343
+
+              <Text color="#A7AEA8" as="a" href="tel: +23470665634223" fontSize="21.33px">
+              +234 706 656 34223
               </Text>
             </Box>
           </Flex>
@@ -71,7 +76,7 @@ export const Footer = () => {
           </Box>
           <Flex rowGap="24px" flexDirection={'column'} display={['flex', 'none']} justifyContent="space-between">
           <Text color="#FFFFFF">
-            🇺🇸 🇳🇬 24b Bodija Olusanya Street, Lekki Phase 1, Lagos, Nigeria.
+            🇺🇸 🇳🇬 144A, Association Road, Dolphin, Ikoyi, Lagos..
           </Text>
 
           <List display="flex" columnGap="2rem">
@@ -105,7 +110,7 @@ export const Footer = () => {
 
         <Flex display={['none', 'flex']} justifyContent="space-between">
           <Text color="#FFFFFF">
-            🇺🇸 🇳🇬 24b Bodija Olusanya Street, Lekki Phase 1, Lagos, Nigeria.
+            🇺🇸 🇳🇬 144A, Association Road, Dolphin, Ikoyi, Lagos..
           </Text>
 
           <List display="flex" columnGap="2rem">
