@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, SimpleGrid } from '@chakra-ui/react'
 import  {MainContainer} from '../../layout'
-import { BenefitBox } from './BenefitBox'
+import { BenefitBox } from './BenefitBoxe'
 import { BenefitContent } from '../../constant'
 export const Benefits = () => {
   return (
