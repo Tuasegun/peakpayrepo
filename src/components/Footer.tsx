@@ -31,7 +31,11 @@ export const Footer = () => {
                 Peakpay ©2023. All Rights Reserved
               </Text>
             </Box>
-            <Box>
+            <Box
+            display="flex"
+            flexDir="column"
+            width="100%"
+            >
               <Heading color="#FFF" fontSize="1.3125rem">
                 Need Help?
               </Heading>
@@ -39,6 +43,7 @@ export const Footer = () => {
               <Text as='a' href="mail:Hello@peakpay.ng" color="#A7AEA8" fontSize="21.33px">
               Hello@peakpay.ng 
               </Text>
+
               <Text color="#A7AEA8" as="a" href="tel: +23470665634223" fontSize="21.33px">
               +234 706 656 34223
               </Text>

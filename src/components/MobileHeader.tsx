@@ -28,11 +28,11 @@ export const MobileHeader = ({closeHeader}: MobileHeaderProps) => {
                 Products
             </Text >
             </NavLink>
-            <NavLink to="/about" onClick={closeHeader}>
+            <a href="#about" onClick={closeHeader}>
             <Text fontSize="1.5rem" fontWeight="700">
                 About
             </Text>
-            </NavLink>
+            </a>
 
             <NavLink to="/terms" onClick={closeHeader}>
             <Text fontSize="1.5rem" fontWeight="700">
