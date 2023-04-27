@@ -44,8 +44,8 @@ export const Footer = () => {
               Hello@peakpay.ng 
               </Text>
 
-              <Text color="#A7AEA8" as="a" href="tel: +23470665634223" fontSize="21.33px">
-              +234 706 656 34223
+              <Text color="#A7AEA8" as="a" href="tel: +2347066563422" fontSize="21.33px">
+              +234 706 656 3422
               </Text>
             </Box>
           </Flex>
